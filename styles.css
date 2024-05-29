@@ -626,6 +626,9 @@ html, body {
 #main__img {
     height: 80%;
     width: 80%;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
 }
 
 /*mobile responsive Hero section*/
@@ -656,6 +659,11 @@ html, body {
     .main__content p {
         margin-top: 2rem;
         font-size: 1.5rem;
+    }
+    #main__img {
+        width: 80%; /* Ensure image fits within container */
+        max-width: 80%; /* Constrain image width */
+        height: auto; /* Maintain aspect ratio */
     }
 }
 
@@ -701,6 +709,7 @@ html, body {
         margin-top: 2rem;
         font-size: 1.5rem;
     }
+
 }
 
 @media screen and (max-width: 400px) {
