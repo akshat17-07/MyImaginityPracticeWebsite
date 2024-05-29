@@ -197,24 +197,35 @@
    }
 }
 
-.main{
-    background-color: #131313;
-}
+
 
 /*hero section*/
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    background-color: #141414;
+        min-height: 100vh;
+}
+
 .main__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-self: center;
     margin: 0 auto;
-    height: 90vh;
+    height: auto;
+    min-height: 90vh;  /* Adjust this value if needed */
     background-color: #141414;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
     padding: 0 50px;
 }
+
 
 .main__content h1{
     font-size: 4rem;
